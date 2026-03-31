@@ -1,23 +1,17 @@
-const appName = "My App";
-console.log("Ilovaga xush kelibsiz!");
+// With decimals:
+let x1 = 34.00;
 
-let userName = "Ali";
-let age = 16;
+// Without decimals:
+let x2 = 34;
 
-console.log("Salom, " + userName);
-console.log("Yoshingiz: " + age);
+let y = 123e5;    // 12300000
+let z = 123e-5;   // 0.00123
 
-let num1 = 10;
-let num2 = 5;
+let x = 5;
 
-let sum = num1 + num2;
-let difference = num1 - num2;
-let product = num1 * num2;
-let division = num1 / num2;
+(x == 8); // equals false
+(x != 8); // equals true
 
-console.log("Yig'indi: " + sum);
-console.log("Ayirma: " + difference);
-console.log("Ko'paytma: " + product);
-console.log("Bo'lish: " + division);
+let carName;
 
-console.log("Dastur tugadi.");
+let car = "";    // The value is "", the typeof is "string"
