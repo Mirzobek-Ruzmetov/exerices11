@@ -1,17 +1,30 @@
-let ism = "Mirzobek";
-let yosh = 16;
+var x = 2;     // Allowed
+var x = 3;     // Allowed
+x = 4;         // Allowed
 
-console.log("Salom " + ism);
-console.log("Yosh: " + yosh);
+var x = 2;     // Allowed
+const x = 2;   // Not allowed
 
-let a = 5;
-let b = 3;
-
-let yigindi = a + b;
-console.log("Yig'indi: " + yigindi);
-
-function salom() {
-  console.log("Xush kelibsiz!");
+{
+let x = 2;     // Allowed
+const x = 2;   // Not allowed
 }
 
-salom();
+{
+const x = 2;   // Allowed
+const x = 2;   // Not allowed
+}
+
+const x = 2;     // Allowed
+x = 2;           // Not allowed
+var x = 2;       // Not allowed
+let x = 2;       // Not allowed
+const x = 2;     // Not allowed
+
+{
+  const x = 2;   // Allowed
+  x = 2;         // Not allowed
+  var x = 2;     // Not allowed
+  let x = 2;     // Not allowed
+  const x = 2;   // Not allowed
+}
